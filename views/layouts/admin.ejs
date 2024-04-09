@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= locals.title %></title>
+  <meta name="description" content="<%= locals.description %>">
+  <link rel="stylesheet" href="/css/style.css">
+  <script type="text/javascript" defer src="/js/script.js"></script>
+</head>
+<body>
+  
+  <div class="container">
+    <header class="header">
+      <a href="/" class="header_logo">Admin Panel</a>
+      <nav class="header_nav">
+          <ul>
+              <li><a href="/" class="active">Home</a></li>
+              <li><a href="/admin">Admin Dashboard</a></li>
+          </ul>
+      </nav>
+      <div class="header_button">
+          <button class="searchBtn" aria-expanded="false">
+              Log Out
+              <i class="fas fa-search"></i>
+          </button>
+      </div>
+  </header>
+    <main class="main">
+      <%- body %>
+    </main>
+    <footer class="footer">
+      Have fun with it
+  </footer>
+  </div>  
+
+</body>
+</html>

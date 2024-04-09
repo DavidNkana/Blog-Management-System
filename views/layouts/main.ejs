@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%- locals.title %></title>
+    <meta name="description" content="<%= locals.description %>">
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" defer src="/js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+
+</head>
+<body>
+    <%- include('../partials/search.ejs') %>
+    <div class="container">
+        <header class="header">
+            <a href="/" class="header_logo">Logo</a>
+            <nav class="header_nav">
+                <ul>
+                    <li><a href="/" class="active">Home</a></li>
+                    <li><a href="/admin">Admin Dashboard</a></li>
+                </ul>
+            </nav>
+            <div class="header_button">
+                <button class="searchBtn" aria-expanded="false">
+                    Search
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </header>
+        <main class="main">
+            <%- body %>
+        </main>
+        <footer class="footer">
+            Have fun with it
+        </footer>
+    </div>
+    
+</body>
+</html>
